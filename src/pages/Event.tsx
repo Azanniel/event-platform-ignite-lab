@@ -13,7 +13,12 @@ export function Event() {
       <main className="flex flex-1">
         { slug 
           ? <Video lessonSlug={slug} /> 
-          : <div className="flex-1"></div> 
+          : (
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <h1 className="text-4xl text-blue-500 leading-tight">Rumo ao próximo nível 🧑‍🚀</h1>
+              <p className="leading-relaxed text-xl text-gray-400">Está pronto para dar o próximo passo para sua evolução?</p>
+            </div>
+          )
         }
         <Sidebar />
       </main>
